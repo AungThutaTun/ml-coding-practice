@@ -120,3 +120,4 @@ print(a)
 #삭제
 del a[-1]
 print(a)
+
