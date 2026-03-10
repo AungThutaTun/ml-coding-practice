@@ -141,3 +141,4 @@ print(a)
 a.remove(99)
 print(a)
 
+#원소 삳
