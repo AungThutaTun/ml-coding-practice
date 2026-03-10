@@ -43,3 +43,9 @@ print(a[4:6])
 print(a[19:])
 print(a[:3])
 print(a[7:-11])
+
+#문지 개수 계산
+a = "python"
+print(a.count('p'))
+
+#문자열 위치 확인
