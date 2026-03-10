@@ -49,3 +49,4 @@ a = "python"
 print(a.count('p'))
 
 #문자열 위치 확인
+print(a.find('y'))
