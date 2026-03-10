@@ -53,3 +53,6 @@ print(a.find('y'))
 print(a.find('p')) 
 print(a.index('y'))
 #print(a.index('p')) #index는 찾는 문자가 없으면 오류 발생
+
+#문자 삽입
+b = ","
