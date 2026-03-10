@@ -137,4 +137,4 @@ print(a.index(9))
 a.insert(0, 99)
 print(a)
 
-#원소 샂
+#원소 삭제
