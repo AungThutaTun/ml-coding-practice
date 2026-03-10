@@ -180,4 +180,4 @@ t2 * 10
 #t2[0] = 99 #오류 발생
 
 #딕셔너리 만들기
-dic = {' name': 'Hong', 'phone'}
+dic = {' name': 'Hong', 'phone': '01012345678', 'birth': '0814'}
