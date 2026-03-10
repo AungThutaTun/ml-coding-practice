@@ -145,4 +145,6 @@ print(a)
 a.remove(99)
 print(a)
 
-#원소 삳
+b = [1, 2, 3]
+print(b.pop())
+print(b)
