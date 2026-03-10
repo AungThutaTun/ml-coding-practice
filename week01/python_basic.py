@@ -186,4 +186,5 @@ dic = {' name': 'Hong', 'phone': '01012345678', 'birth': '0814'}
 dic[1] = 'a'
 print(dic)
 
-dic
+dic['pet'] = 'dog'
+print(dic)
