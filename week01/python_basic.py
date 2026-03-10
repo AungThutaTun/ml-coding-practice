@@ -129,3 +129,6 @@ print(a)
 a = [3, 4, 1, 9]
 a.reverse()
 print(a)
+
+#원소 위치 확인
+print(a.index(9))
