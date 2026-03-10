@@ -77,3 +77,5 @@ a = "Pithon"
 a = "Python is difficult."
 print(a.replace("difficult", "funny"))
 print(a) 
+
+
