@@ -84,3 +84,7 @@ print(a.split())
 b = "a, b, c, d"
 print(b)
 print(b.split(' , '))
+
+#리스트 만들기
+a = [1, 2, 3]
+b = ['Life', 'is', 'too', 'short']
