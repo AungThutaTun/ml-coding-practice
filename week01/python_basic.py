@@ -6,3 +6,8 @@ print(a ** b)
 print (a ** 3)
 
 print (a % b)
+print (a ** 3)
+
+#나머지 연산
+print (a % b)
+print(7 // 3) #몫 연산자
