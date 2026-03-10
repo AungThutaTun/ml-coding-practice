@@ -12,3 +12,7 @@ print (a ** 3)
 print (a % b)
 print(7 // 3) #몫 연산자
 
+s1 = 'Hello Python'
+print(s1)
+
+s3 = 'Hello Python'
