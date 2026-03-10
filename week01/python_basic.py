@@ -78,4 +78,5 @@ a = "Python is difficult."
 print(a.replace("difficult", "funny"))
 print(a) 
 
-
+#문자얄 나누기
+print(a.split())
