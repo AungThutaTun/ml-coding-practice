@@ -80,3 +80,7 @@ print(a)
 
 #문자얄 나누기
 print(a.split())
+
+b = "a, b, c, d"
+print(b)
+print(b.split(", "))
