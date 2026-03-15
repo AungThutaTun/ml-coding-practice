@@ -351,4 +351,6 @@ print(dir(1))
 print(int('3'))
 print(str(3))
 
-#
+#x 를 이스트로 반환
+print(list("python"))
+print((1, 2, 3))
