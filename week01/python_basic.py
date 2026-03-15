@@ -203,3 +203,5 @@ print(list(dic.keys()))
 
 for key in dic.key():
     print(dic[key])
+    
+#value의 리스트 만들기
