@@ -335,4 +335,10 @@ print(all([4, -2, 0.0, 4]))
 print(any([0, 1, 2, 3, 4]))
 print(any([4, -2, 0.0, 4]))
 
-#
+#아스키코드 값에 대한 문자 출력
+print(chr(97))
+print(chr(48))
+
+#문자에 대한 아스키코드 값 출력
+print(ord('a'))
+print(ord('0'))
