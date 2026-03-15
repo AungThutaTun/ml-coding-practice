@@ -217,3 +217,10 @@ for key, value in dic.items():
 #원소 삭제
 dic.clear()
 print(dic)
+
+#집합 만들기
+s1 = {1, 2, 'a', 5}
+s2 = set([1, 2, 3, 4, 5, 6])
+print(s2)
+s3 = set([4 , 5, 6, 7, 8, 9])
+print(s3)
