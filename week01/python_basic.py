@@ -303,3 +303,7 @@ while i < 5:
     i += 1
     print('*' *1)
     
+#함수 정의
+def sum1(a, b):
+    x = a + b
+    return x
