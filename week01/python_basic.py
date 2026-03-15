@@ -359,4 +359,11 @@ print((1, 2, 3))
 print(tuple("python"))
 print(tuple([1, 2, 3]))
 
+#x의 자료형을 반환
+print(type("abc"))
+print(type(a))
 
+#간단한 사업형 함수 생성
+sum = lambda a, b: a + b
+
+print(sum(3, 5))
