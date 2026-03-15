@@ -180,7 +180,7 @@ t2 * 10
 #t2[0] = 99 #오류 발생
 
 #딕셔너리 만들기
-dic = {' name': 'Hong', 'phone': '01012345678', 'birth': '0814'}
+dic = {'name': 'Hong', 'phone': '01012345678', 'birth': '0814'}
 
 #원소 추가
 dic[1] = 'a'
@@ -195,6 +195,7 @@ print(dic)
 
 #원소의 value 구하기
 print(dic['phone'])
+print(dic['name'])
 
 
 #key의 리스트 만들기
