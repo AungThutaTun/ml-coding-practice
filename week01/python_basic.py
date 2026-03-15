@@ -300,5 +300,6 @@ for score in [90, 25, 67, 45, 93]:
 #while 문
 i = 0 
 while i < 5:
-    print(i)
-    i = i + 1
+    i += 1
+    print('*' *1)
+    
