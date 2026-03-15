@@ -372,7 +372,7 @@ print(sum(3, 5))
 print(max([1, 4, 2, 8, 6]))
 print(max("python"))
 
-pribnt(min([1, 4, 2, 8, 6]))    
+print(min([1, 4, 2, 8, 6]))    
 print(min("python"))
 
 #x의 y제곱 결과값 반환
@@ -391,3 +391,6 @@ print(range(5))
 print(list(range(5)))
 print(list(range(5, 10)))
 print(list(range(5, 10, 2)))
+
+for i in range(5, 20, 3):
+    print(i)
