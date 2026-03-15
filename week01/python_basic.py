@@ -252,3 +252,4 @@ s2.remove(7)
 print(s2)
 
 s2 = set([1, 2, 3, 4, 5, 6, 3, 1, 6])
+print(s2)
