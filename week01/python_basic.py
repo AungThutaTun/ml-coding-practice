@@ -464,6 +464,7 @@ data
 #with open() as 파일 객체
 with open('example.txt', 'r') as f:
     f.write("Now is better than never.")
+#data = f.read() #오류 발생
 
 
 
