@@ -354,3 +354,9 @@ print(str(3))
 #x 를 이스트로 반환
 print(list("python"))
 print((1, 2, 3))
+
+#x를 튜플로 반환
+print(tuple("python"))
+print(tuple([1, 2, 3]))
+
+
