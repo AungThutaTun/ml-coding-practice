@@ -73,3 +73,11 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df.head())
+
+#필터링 조건 설정
+condition = (
+    (df['comment_length'] > 100) &100 자 이상
+    (df['likes'] > 20) & 좋아요 20개 이상
+    (~df['is_spam']) & 스팸이 아닌
+    (df['has_image']) 이미지가 있는 
+)
