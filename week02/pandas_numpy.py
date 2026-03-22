@@ -203,4 +203,4 @@ print(np.random.randinr(50, 71, 10))
 print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3))
 print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3, replace= False))
 
-print()
+print(np.arrange(1, 11))
