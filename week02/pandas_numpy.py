@@ -83,3 +83,11 @@ condition = (
 )
 
 #조건을 만족하는 행들 필터링
+winner_df = df[condition]
+print(winner_df)
+
+print(sample-df.reset_index())
+
+print(sample_df.reset_index(drop=True))
+
+print(sample_df.set_index('var_1'))
