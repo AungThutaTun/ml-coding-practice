@@ -28,4 +28,4 @@ print(sample_df['var_5'])
 #print(sample_df['var_1', 'var_2]) #[] 안에난 하나의ㅜ값만 들어갈 수 있음
 print(sample_df[['var_1', 'var_4']]) # [ []]를 사용하면 [] 가 하나의 값이 인식됨
 
-
+#
