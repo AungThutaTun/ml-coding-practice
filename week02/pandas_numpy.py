@@ -217,3 +217,7 @@ a = np.arrange(8) .reshape(2, 4) ** 2
 print(a)
 
 print(a.sum())
+print(a.mean())
+print(a.mean(axis = 0))
+
+print
