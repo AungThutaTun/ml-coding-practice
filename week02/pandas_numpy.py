@@ -204,3 +204,7 @@ print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3))
 print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3, replace= False))
 
 print(np.arrange(1, 11))
+print(np.arrange(1,11,2))
+print(np.linspace(1,100,10))
+
+A = np
