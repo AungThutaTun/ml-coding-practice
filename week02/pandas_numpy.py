@@ -125,7 +125,7 @@ df = pd.DataFrame(data)
 print(df.head())
 
 
-result = df[df['age'] >= 30][['name', 'salart']]
+result = df[df['age'] >= 30][['name', 'salary']]
 print((result))
 
 
@@ -133,7 +133,12 @@ data = {
     'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
     'math' : [88, 92, 85, 95, 90],
     'science' : [80, 85, 88, 92, 85],
-    'english' : [90, 87, 85, 88, 92]
-    
-    
+    'english' : [90, 87, 85, 88, 92] 
 }
+
+
+df = pd.DataFrame(data)
+print(df.head())
+
+
+df[]
