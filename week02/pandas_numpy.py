@@ -41,6 +41,6 @@ print(sample_df.iloc[0:3, 2:4])     #컬럼까지 동시에 인덱싱
 
 print(sample_df.drop(['var_1', 'var_3'], axis=1))   #컬럼을 삭제거하려면 axis=1을 지정해야함
 print(sample_df.drop(['var_1', 'var_2'], axis=1))
-print(sample_df.)
+print(sample_df.drop(['a', 'b', 'c'], axis=0))   #행을 삭제하려면 axis=0을 지정해야함
 
 
