@@ -72,6 +72,7 @@ data = {
     'has_image' : [True, False, True, True, False, False, True, True]
 }
 df = pd.DataFrame(data)
+print("--- Original DataFrame ---")
 print(df.head())
 
 #필터링 조건 설정
