@@ -185,4 +185,11 @@ print(sample_np[:,2])
 
 np_a = np.array([[1,3], [0,-2]])
 print(np_a)
-print(np)
+print(np_a + 10)
+print(np_a - 5)
+print(np_a * 2)
+print(np_a+10 / 3)
+
+np_b = np.array([[1,0], [0,1]])
+print(np_b)
+print(np_a + np_b)
