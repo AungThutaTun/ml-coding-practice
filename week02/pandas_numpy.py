@@ -207,4 +207,13 @@ print(np.arrange(1, 11))
 print(np.arrange(1,11,2))
 print(np.linspace(1,100,10))
 
-A = np
+A = np. array([4, 16, 25])
+print(np.sqrt(A))
+
+print(np.arrange(8).reshape(2,4) + 10)
+
+
+a = np.arrange(8) .reshape(2, 4) ** 2
+print(a)
+
+print(a.sum())
