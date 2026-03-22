@@ -110,4 +110,14 @@ print(iris.drop('class', axis=1). agg(['sum', 'mean', 'std' ]))
 
 
 print(iris['class'].unique())
-print(iris['class'].unique)
+print(iris['class'].nunique())
+print(iris['class'].value_counts())
+
+
+data = {
+    'name' : ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'age' : [25, 30, 35, 28, 40],
+    'salary': [70000.00, 80000.00, 90000.00, 60000.00, 95000.00]
+}
+
+#
