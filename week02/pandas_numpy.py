@@ -77,7 +77,7 @@ print(df.head())
 #필터링 조건 설정
 condition = (
     (df['comment_length'] > 100) &100 자 이상
-    (df['likes'] > 20) & 좋아요 20개 이상
-    (~df['is_spam']) & 스팸이 아닌
-    (df['has_image']) 이미지가 있는 
+    (df['likes'] > 20) &  이상
+    (~df['is_spam']) & 아니어야 함
+    (df['has_image']) 댓글이어야 함 
 )
