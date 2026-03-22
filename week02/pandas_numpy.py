@@ -220,4 +220,7 @@ print(a.sum())
 print(a.mean())
 print(a.mean(axis = 0))
 
-print
+print(a.min())
+print(a.max())
+
+print(a.)
