@@ -170,4 +170,14 @@ print(np.array([[[1,2,3],
 print(np.array([1,2,3,4,5]))
 print(np.array(sample_df))
 
-sample_np = np.array
+sample_np = np.array(sample_df)
+print(pd.DataFrame(sample_np))
+
+print(sample_df.columns)
+
+print(pd.DataFrame(sample_np, columns = sample_df.columns))
+
+print(sample_np)
+print(sample_np[0])
+print(sample_np[0,2])
+print(sample_np[0;3,2:4])
