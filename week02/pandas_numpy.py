@@ -140,3 +140,6 @@ data = {
 df = pd.DataFrame(data)
 print(df.head())
 
+df['average'] = df[['math', 'science', 'english']].mean(axis=1)
+print(df)
+
