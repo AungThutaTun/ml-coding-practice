@@ -203,17 +203,17 @@ print(np.random.randint(50, 71, 10))
 print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3))
 print(np.random.choice(['red', 'green', 'white', 'black', 'blue'], size=3, replace= False))
 
-print(np.arrange(1, 11))
-print(np.arrange(1,11,2))
+print(np.arange(1, 11))
+print(np.arange(1,11,2))
 print(np.linspace(1,100,10))
 
 A = np. array([4, 16, 25])
 print(np.sqrt(A))
 
-print(np.arrange(8).reshape(2,4) + 10)
+print(np.arange(8).reshape(2,4) + 10)
 
 
-a = np.arrange(8) .reshape(2, 4) ** 2
+a = np.arange(8) .reshape(2, 4) ** 2
 print(a)
 
 print(a.sum())
