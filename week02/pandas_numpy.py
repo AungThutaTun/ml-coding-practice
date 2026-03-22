@@ -47,7 +47,14 @@ netflix = pd.read_csv('2.1.1.netflix.csv')
 print(netflix.head())
 
 print(netflix['release_year'])
-print(netflix[netflix['release_year'] == 2015])
+print(netflix[netflix['release_year'] > 2015])
+
+more2015 = netflix[netflix['release_year'] > 2015]
+print(more2015.head(10))
+
+print(~(netflix['release_year'] > 2015))
+less2015 = netflix[~(netflix['release_year'] > 2015)]
+print(less2015.head())
 
 
 
