@@ -18,3 +18,6 @@ print(titanic.info())
 
 pclass_survived_mean = titanic.groupby('Pclass') ['Survived'].mean().reset_index()
 pclass_survived_mean
+
+
+import matplotlib.pyplot as plt
