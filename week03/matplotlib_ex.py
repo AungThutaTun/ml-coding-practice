@@ -23,4 +23,5 @@ pclass_survived_mean
 import matplotlib.pyplot as plt
 
 
-plt.plot(pclass_survived_mean['Pclass'], pclass_survived_mean['Survived'].mean())
+plt.plot(pclass_survived_mean['Pclass'], pclass_survived_mean['Survived'],
+         marker='o', linestyle='-', color='violet')
