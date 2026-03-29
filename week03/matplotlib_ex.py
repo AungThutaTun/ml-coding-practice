@@ -108,4 +108,4 @@ print(survived_counts)
 
 plt.figure(figsize=(8,8))
 plt.pie(survived_counts, labels=['Not Survived', 'Survived'], colors=['orange','gold'],
-        autopct='%0.1f')
+        autopct='%0.1f%%', startangle=90, shadow=True)
