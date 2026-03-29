@@ -241,3 +241,11 @@ print(fare_means, '\n')
 
 fare_std = titanic.groupby('Parch')['Fare'].std()
 print(fare_std)
+
+
+
+
+plt.figure(figsize=(10,6))
+
+
+plt.errorbar(fare_means.index, fare_means, yerr=fare_std, fmt='o', color='teal',
