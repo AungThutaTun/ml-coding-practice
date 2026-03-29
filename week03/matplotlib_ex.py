@@ -186,3 +186,9 @@ plt.legend()
 plt.grid(True)
 plt.savefig('Figure08.png')
 plt.close()
+
+
+
+
+titanic = titanic.dropna(subset=['Age'])
+print(titanic.info())
