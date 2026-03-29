@@ -240,4 +240,4 @@ fare_means = titanic.groupby('Parch')['Fare'].mean()
 print(fare_means, '\n')
 
 fare_std = titanic.groupby('Parch')['Fare'].std()
-print(fare_std')
+print(fare_std)
