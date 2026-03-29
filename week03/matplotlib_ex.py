@@ -280,4 +280,4 @@ plt.close()
 titanic = pd.read_csv('3.1.1.titanic.csv')
 
 
-parch_counts = 
+parch_counts = titanic.gro
