@@ -117,7 +117,7 @@ plt.close()
 
 
 
-print(titanic,info(),'\n')
+print(titanic.info(),'\n')
 
 
 titanic = titanic.dropna(subset=['Age'])
