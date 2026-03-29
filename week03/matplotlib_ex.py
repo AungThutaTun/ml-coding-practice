@@ -142,3 +142,10 @@ titanic = titanic.dropna(subset= ['Age', 'Fare'])
 
 correlation_matrix = titanic.drop('PassengerId', axis = 1).corr(numeric_only = True)
 print(correlation_matrix)
+
+
+plt.matshow(correlation_matrix , cmap= 'PuRd_r')
+plt.colorbar()
+
+
+plt.xticks(range(len(correlation_matrix.columns)))
