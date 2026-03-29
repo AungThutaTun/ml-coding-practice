@@ -38,3 +38,8 @@ plt.close()
 
 survived_counts = titanic[titanic['survived'] == 1] ['Embarked']. value_counts()
 print(survived_counts)
+
+
+plt.bar(survived_counts.index , survived_counts,
+       color = [ 'mediumorchid', 'darkviolet', 'indigo'])
+
