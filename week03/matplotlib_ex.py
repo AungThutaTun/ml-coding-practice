@@ -209,3 +209,7 @@ plt.close()
 
 
 titanic['Age'] = titanic['Age'].fillna(titanic['Age'].mean())
+print(titanic.info())
+
+
+plt.figure(figsize=(10,6))
