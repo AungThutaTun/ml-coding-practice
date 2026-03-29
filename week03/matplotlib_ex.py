@@ -32,3 +32,9 @@ plt.xticks([1, 2, 3])
 plt.grid(True)
 plt.savefig('Figure01.png')
 plt.close()
+
+
+
+
+survived_couts = titanic[titanic['survived'] == 1] ['Embarked']. value_counts()
+print(survived_couts)
