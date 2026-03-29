@@ -46,4 +46,12 @@ plt.title('Survived Counts by Embarked Port on Titanic')
 plt.xlabel('Embarked Port')
 plt.ylabel('Count')
 plt.xticks(survived_counts.index, ['Southampton', 'Cherbourg', 'Queenstown'])
-plt.legend(['Survived'] loc='upper right')    
+plt.legend(['Survived'] ,loc='upper right') 
+plt.grid(axis = 'y', linestyle= '--', alpha=0.7)
+
+
+for i, value in enumerate(survived_counts) :
+    plt.text(i, value +1 , str(value), ha= 'center', va='bottom')
+
+plt.savefig('Figure02.png')   
+plt.close()
