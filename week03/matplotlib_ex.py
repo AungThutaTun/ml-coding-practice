@@ -141,3 +141,4 @@ titanic = titanic.dropna(subset= ['Age', 'Fare'])
 
 
 correlation_matrix = titanic.drop('PassengerID', axis = 1).cor(numeric_only = True)
+print(correlation_matrix)
