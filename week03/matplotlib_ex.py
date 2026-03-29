@@ -284,3 +284,14 @@ parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fil
 print(parch_counts)
 
 
+x = parch_counts.index.astype(str)
+y1 = parch_counts[0].values
+y2 = parch_counts[1].values
+
+plt.figure(figsize=(10,10))
+
+
+
+plt.subplot(2, 1, 1)
+
+plt.plot(x, y1, '-o', color='indigo', markersize=7, linewidth=3, alpha=0.7)
