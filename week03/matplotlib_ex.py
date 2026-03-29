@@ -213,3 +213,5 @@ print(titanic.info())
 
 
 plt.figure(figsize=(10,6))
+
+
