@@ -171,3 +171,4 @@ print(survived_counts)
 plt.figure(figsize=(10,6))
 
 
+plt.fill_between(survived_counts.index)
