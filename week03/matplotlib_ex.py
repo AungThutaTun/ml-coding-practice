@@ -208,4 +208,4 @@ plt.close()
 
 
 
-titanic['Age']
+titanic['Age'] = titanic['Age'].fillna(titanic['Age'].mean())
