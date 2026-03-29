@@ -61,3 +61,20 @@ plt.close()
 
 survived_counts = titanic[titanic['survived'] == 1]['Sex'].value_counts()
 print(survived_counts)
+
+
+bars = plt.barh(survived_counts.index, survived_counts, color=['darkturquoise', 'salmon'])
+plt.title('Survived Counts by Gender on Titanic')
+plt.xlabel('Count')
+plt.ylabel('Gender')
+plt.legend(bars, ['Survived - Female', 'Survived - Male'], loc = 'upper right')
+
+
+plt.axvline( x =survived_counts['male'], color ='gray', linestyle= '--', linewidth=1)
+
+
+for i, value in enumerate(survived_counts):
+    plt.text(value + 1, i , str(value), ha='left', va='center')
+    
+    plt.savefig('Figure03.png')
+    plt.close()
