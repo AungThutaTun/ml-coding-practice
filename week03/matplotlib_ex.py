@@ -372,3 +372,7 @@ print(parch_counts)
 x = parch_counts.index.astype(str)
 y1 = parch_counts[0].values
 y2 = parch_counts[1].values
+
+
+
+fig, axes = plt.subplots()
