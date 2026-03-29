@@ -59,7 +59,7 @@ plt.close()
 
 
 
-survived_counts = titanic[titanic['survived'] == 1]['Sex'].value_counts()
+survived_counts = titanic[titanic['Survived'] == 1]['Sex'].value_counts()
 print(survived_counts)
 
 
@@ -81,10 +81,10 @@ plt.close()
 
 
 
-print(titanic,info(), '\n')
+print(titanic.info(), '\n')
 
 
-titanic = titanic,dropna(subset = ['Age', 'Fare', 'Survived'])
+titanic = titanic.dropna(subset = ['Age', 'Fare', 'Survived'])
 print(titanic.info())
 
 
