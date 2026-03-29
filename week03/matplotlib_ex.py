@@ -378,4 +378,4 @@ y2 = parch_counts[1].values
 fig, axes = plt.subplots()
 
 
-ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=3, alpha=0.7, label='Not Survived')
+ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=5, alpha=0.7, label='Not Survived')
