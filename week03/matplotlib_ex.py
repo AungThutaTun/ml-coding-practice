@@ -95,4 +95,6 @@ plt.title('Age and Fare Realtionship with Survval on the Titanic')
 plt.xlabel('Age')
 plt.ylabel('Fare')
 plt.legend(handles=scatter.legend_elements()[0], title='Survived',
-           labels=['Not Survived'])
+           labels=['Not Survived', 'Survived'], loc = 'upper right')
+plt.savefig('Figure04.png')
+plt.close()
