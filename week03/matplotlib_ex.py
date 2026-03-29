@@ -355,3 +355,14 @@ axes[1].set_xlabel('Parch')
 axes[1].set_ylabel('Survived Count', color='deeppink')
 axes[1].tick_params(axis='y', labelcolor='deeppink')
 axes[1].legend(loc='upper right')
+
+
+fig.suptitle('Survival Analysis by Number of Parents/Children (Parch) on the Titanic')
+plt.tight_layout()
+plt.savefig('Figure15.png')
+plt.close() 
+
+
+
+
+parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
