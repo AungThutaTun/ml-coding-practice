@@ -98,3 +98,13 @@ plt.legend(handles=scatter.legend_elements()[0], title='Survived',
            labels=['Not Survived', 'Survived'], loc = 'upper right')
 plt.savefig('Figure04.png')
 plt.close()
+
+
+
+
+survived_counts = titanic['Survived'].value_counts()
+print(survived_counts)
+
+
+plt.figure(figsize=(8,8))
+plt.pie(survived_counts, labels=['Not Survived', 'Survived'], colors=['orange'])
