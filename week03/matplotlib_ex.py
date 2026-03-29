@@ -382,3 +382,4 @@ ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=5, alpha=0.7, labe
 ax1.set_xlabel('Parch')
 ax,1.set_ylabel('Not Survived Count', color='indigo')
 ax1.tick_params(axis='y', labelcolor='indigo')
+ax.1.legend(loc='upper right')
