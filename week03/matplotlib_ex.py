@@ -386,3 +386,9 @@ ax1.legend(loc='upper right', bbox_to_anchor=(1, 1))
 
 
 ax2 = ax1.twinx()
+
+
+ax2.bar(x, y2, color='deeppink', alpha=0.7, label='Survived')
+ax2.set_ylabel('Survived Count', color='deeppink')
+ax2.tick_params(axis='y', labelcolor='deeppink')
+ax2.legend(loc='upper right', bbox_to_anchor=(1, 0.9))
