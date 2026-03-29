@@ -55,3 +55,9 @@ for i, value in enumerate(survived_counts) :
 
 plt.savefig('Figure02.png')   
 plt.close()
+
+
+
+
+survived_counts = titanic[titanic['survived'] == 1]['Sex'].value_counts()
+print(survived_counts)
