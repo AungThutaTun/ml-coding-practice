@@ -331,5 +331,5 @@ plt.close()
 
 
 
-parch_counts = 
-titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
+parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
+print(parch_counts)
