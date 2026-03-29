@@ -383,3 +383,6 @@ ax1.set_xlabel('Parch')
 ax1.set_ylabel('Not Survived Count', color='indigo')
 ax1.tick_params(axis='y', labelcolor='indigo')
 ax1.legend(loc='upper right', bbox_to_anchor=(1, 1))
+
+
+ax2 = ax1.twinx()
