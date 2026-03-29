@@ -348,3 +348,10 @@ axes[0].set_xlabel('Parch')
 axes[0].set_ylabel('Not Survived Count', color='indigo')
 axes[0].tick_params(axis='y', labelcolor='indigo')
 axes[0].legend(loc='upper right')
+
+
+axes[1].bar(x, y2, color='mediumorchid', alpha=0.7, label='Survived')
+axes[1].set_xlabel('Parch')
+axes[1].set_ylabel('Survived Count', color='mediumorchid')
+axes[1].tick_params(axis='y', labelcolor='mediumorchid')
+axes[1].legend(loc='upper right')
