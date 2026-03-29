@@ -192,3 +192,7 @@ plt.close()
 
 titanic = titanic.dropna(subset=['Age'])
 print(titanic.info())
+
+
+plt.boxplot([titanic[titanic['Pclass'] == 1]['Age'],
+             ])
