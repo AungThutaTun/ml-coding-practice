@@ -248,4 +248,9 @@ print(fare_std)
 plt.figure(figsize=(10,6))
 
 
-plt.errorbar(fare_means.index, fare_means, yerr=fare_std, fmt='o', color='teal',
+plt.errorbar(fare_means.index, fare_means, yerr=fare_std, fmt='o', 
+             capsize=5 , capthick=1, label='Fare')
+
+plt.title('Error Bar Plot of Fare by Parch')
+plt.xlabel('Parch')
+plt.ylabel('Fare')
