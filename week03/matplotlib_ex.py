@@ -85,3 +85,6 @@ print(titanic,info(), '\n')
 
 
 titanic = titanic,dropna(subset = ['Age', 'Fare', 'Survived'])
+print(titanic.info())
+
+
