@@ -375,11 +375,11 @@ y2 = parch_counts[1].values
 
 
 
-fig, axes = plt.subplots()
+fig, ax1 = plt.subplots()
 
 
 ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=5, alpha=0.7, label='Not Survived')
 ax1.set_xlabel('Parch')
-ax,1.set_ylabel('Not Survived Count', color='indigo')
+ax1.set_ylabel('Not Survived Count', color='indigo')
 ax1.tick_params(axis='y', labelcolor='indigo')
-ax.1.legend(loc='upper right', bbox_to_anchor=(1, 1))
+ax1.legend(loc='upper right', bbox_to_anchor=(1, 1))
