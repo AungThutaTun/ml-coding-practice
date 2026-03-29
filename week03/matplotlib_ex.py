@@ -319,3 +319,6 @@ plt.close()
 
 
 fig, axes = plt.subplots(2, 2)
+
+
+axes[0, 0 ]
