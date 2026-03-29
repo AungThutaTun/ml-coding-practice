@@ -397,3 +397,8 @@ plt.title('Survival Analysis by Number of Parents/Children (Parch) on the Titani
 plt.tight_layout()
 plt.savefig('Figure16.png')
 plt.close()
+
+
+
+
+plt.hist(titanic['Age'], bins=20, color='skyblue', edgecolor='black')
