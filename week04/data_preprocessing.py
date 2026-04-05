@@ -43,4 +43,4 @@ housing_num.head()
 
 imputer.fit(housing_num)
 
-print(imputer.statistics_)  #imputer 결과값/var/FOLDERS/Q9/
+print(imputer.statistics_)  #imputer 결과값/var/FOLDERS/Q9/4lk5t9yj5kbc0hpyrvyv0kcw0000gn/T/TemporaryItems/NSIRD_screencaptureui_nvWQdb/Screenshot 2026-04-05 at 1.41.32 PM.png
