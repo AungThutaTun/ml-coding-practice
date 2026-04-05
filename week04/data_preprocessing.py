@@ -44,3 +44,11 @@ housing_num.head()
 imputer.fit(housing_num)
 
 print(imputer.statistics_)  #imputer 결과값/var/FOLDERS/Q9/4lk5t9yj5kbc0hpyrvyv0kcw0000gn/T/TemporaryItems/NSIRD_screencaptureui_nvWQdb/Screenshot 2026-04-05 at 1.41.32 PM.png
+print(housing_num.median().values)
+
+#훈련 세트의 누락값을 imputer가 학습한 값으로 채우기
+X = imputer.transform(housing_num)
+
+imputer.feature_names_in_
+
+housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing_num.index)
