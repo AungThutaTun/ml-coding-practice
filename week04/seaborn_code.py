@@ -66,4 +66,6 @@ plt.savefig('Seaborn_Figure03.png')
 
 # **히스토그램과 커널 밀도 추정 그래프**
 # **히스토그램과 커널 밀도 추정 그래프 함께 그리기
-sns.hisplot(tips['tip'],bins)
+sns.hisplot(tips['tip'],bins = 30, kde=True, color= 'skyblue')
+
+plt.title('Histogram and KDE of Tips')
