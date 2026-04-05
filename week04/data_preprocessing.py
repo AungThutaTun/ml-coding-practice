@@ -52,3 +52,15 @@ X = imputer.transform(housing_num)
 imputer.feature_names_in_
 
 housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing_num.index)
+
+housing_tr.loc[null_rows_idx].head()
+
+#이상타 삭제
+from sklearn.ensemble import IsolationForest
+
+isolation_forest = IsolationForest(contamination=0.01, random_state=42)
+outliers = isolation_forest.fit_predict(X)
+
+outlier_pred
+
+ho
