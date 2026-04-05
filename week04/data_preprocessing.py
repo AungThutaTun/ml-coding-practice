@@ -59,8 +59,9 @@ housing_tr.loc[null_rows_idx].head()
 from sklearn.ensemble import IsolationForest
 
 isolation_forest = IsolationForest(contamination=0.01, random_state=42)
-outliers = isolation_forest.fit_predict(X)
+outlier_pred= isolation_forest.fit_predict(X)
 
 outlier_pred
 
-ho
+housing = housing.iloc[outlier_pred == 1]
+housing_labels = housing_labels.iloc[outlier_pred == 1]
