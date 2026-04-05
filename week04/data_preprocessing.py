@@ -70,7 +70,7 @@ housing_labels = housing_labels.iloc[outlier_pred == 1]
 housing_cat = housing[["ocean_proximity"]]
 housing_cat.head(8)
 
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OrdinalEncoder
 
 ordinal_encoder =OrdinalEncoder()
 housing_cat_encoded = ordinal_encoder.fit_trasform(housing_cat)
