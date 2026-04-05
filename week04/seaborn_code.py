@@ -69,3 +69,4 @@ plt.savefig('Seaborn_Figure03.png')
 sns.hisplot(tips['tip'],bins = 30, kde=True, color= 'skyblue')
 
 plt.title('Histogram and KDE of Tips')
+plt.savefig('Seaborn_Figure04.png')
