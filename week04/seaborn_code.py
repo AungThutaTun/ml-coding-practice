@@ -77,4 +77,5 @@ sns.jointplot(x= 'size', y='tip', data=tips, kind='scatter')
 plt.savefig('Seaborn_Figure05.jpg')
 
 # **관계 그래프**
-#pair
+#pairplot() 그리기
+sns.pairplot(data=tips, hue='sex', diag_kind)
