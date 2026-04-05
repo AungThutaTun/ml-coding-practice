@@ -80,4 +80,5 @@ plt.savefig('Seaborn_Figure05.jpg')
 #pairplot() 그리기
 sns.pairplot(data=tips, hue='sex', diag_kind= 'hist', palette='hus1')
 
-plt.suptitle('Pair')
+plt.suptitle('Pairplot with Histogram by Geder', y=1.05)
+plt.savefig('Seaborn_Figure06.jpg')
