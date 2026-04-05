@@ -72,4 +72,4 @@ housing_cat.head(8)
 
 from sklearn.preprocessing import OneHotEncoder
 
-or
+ordinal_encoder =OrdinalEncoder()
