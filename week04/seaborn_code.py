@@ -46,3 +46,5 @@ sns.countplot(x="time", hue="day", data=tips, palette="Set2", ax=ax2)
 ax1.set_title('Frequency of Tips by Time')
 ax2.set_title('Frequency of Tips by Time and Day')
 plt.savefig('Seaborn_Figure02.png')
+
+# **신형 회궈선 있는 
