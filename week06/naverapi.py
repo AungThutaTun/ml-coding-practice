@@ -43,7 +43,7 @@ def getNaverSearch(node, srcText, start, display) :
     parameters = "?query=%s&start=%d&display=%d" % (urllib.parse.quote(srcText), start, display)
     
     url = base + node + parameters
-    response = urllib.request.Request(url)  #[CODE 1]
+    responseDecode = urllib.request.Request(url)  #[CODE 1]
     
     if (responseDecode == None) :
         return None
