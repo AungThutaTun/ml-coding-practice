@@ -63,3 +63,27 @@ def getTourismStatesItem(yyyymm, nat_cd, ed_cd):
     parameters += "&YM=" + yyyymm 
     parameters += "&NAT_CD=" + nat_cd
     parameters += "&ED_CD=" + ed_cd
+    
+    url = servide_url + parameters
+    
+    responseDecode = geetRequestUrl(url) 
+    
+    if (responseDecode == None):
+        return None
+    else:
+        return json.loads(responseDecode)
+
+"""### [CODE 1 ]"""
+
+def geetRequestUrl(url): #[CODE 1 ]
+    req = urllib.request.Request(url)
+    
+    try:
+        response = urllib.request.urlopen(req)
+        if response.getcode() == 200:
+            print("[%s] Url Request Success" % datetime.datetime.now())
+            return response.read().decode('utf-8')
+    except Exception as e:
+        print(e)
+        print("[%s] Error for URL : %s" % (datetime.datetime.now(), url))
+        return None
