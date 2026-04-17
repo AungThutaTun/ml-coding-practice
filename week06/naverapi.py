@@ -76,7 +76,7 @@ def getNaverSearch(node, srcText, start, display) :
         #%a:짧은 형식의 요일 이름 (에, 'Mon', 'Tue', 'Wed', ...)
         #%d:일 (예, 01,02,03,...)
         #%b:짧은 형식의 월 이름 (예, 'Jan', 'Feb', 'Mar', ...)
-        pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')    
+        pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S +0900').strftime('%Y-%m-%d')    
         jsonResult.append({'cnt': cnt, 'title': title, 'description': description,
                            'org_link': org_link, 'link': link, 'pDate': pDate})
     
