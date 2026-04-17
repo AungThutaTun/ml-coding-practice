@@ -38,4 +38,5 @@ def getTourismStatesService(nat_cd, ed_cd, nStartYear, nEndYear):
             if (jsonData['response']['header']['resultMsg'] == 'OK'):
                 #데이터가 없는 마지막 항복인 경우 -------------------
                 if jsonData['response']['body']['items'] == '':
-                    dataEND = "{0}{}"
+                    dataEND = "{0}{1:)>2}".format(str(year), str(month-1))
+                    
