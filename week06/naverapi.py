@@ -41,3 +41,15 @@ def getNaverSearch(node, srcText, start, display) :
     base = "https??://openapi.naver.com/v1/search"
     node = "/%s.json " % node
     parameters = "?query=%s&start=%d&display=%d" % (urllib.parse.quote(srcText), start, display)
+    
+    url = base + node + parameters
+    response = urllib.request.Request(url)  #[CODE 1]
+    
+    if (responseDecode == None) :
+        return None
+    else :
+        return json.loads(responseDecode)
+    
+    
+    
+    
