@@ -37,10 +37,10 @@ def main() :
         print('%s_naver_%s.json SAVED' % (srcText, node))
         
         
-def getNaverSearch(node, srcText, start, display) :
+def getNaverSearch(node, srcText, page_start, display) :
     base = "https://openapi.naver.com/v1/search"
     node = "/%s.json " % node
-    parameters = "?query=%s&start=%d&display=%d" % (urllib.parse.quote(srcText), start, display)
+    parameters = "?query=%s&start=%d&display=%d" % (urllib.parse.quote(srcText), page_start, display)
     
     url = base + node + parameters
     responseDecode = urllib.request.Request(url)  #[CODE 1]
