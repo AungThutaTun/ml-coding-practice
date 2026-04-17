@@ -26,3 +26,5 @@ def main() :
         jsonResponse = getNaverSearch(node, srcText, start, 100)  #[CODE 2]
         
     print('전체 검색 : %d 건' % total)
+    
+    with open('%s_naver_%s.json' % (srcText, node) , 'w', encoding ) 
