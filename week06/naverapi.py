@@ -66,4 +66,7 @@ def getNaverSearch(node, srcText, start, display) :
             print(e)
             print("[%s] Error for URL : %s" % (datetime.datetime.now(), url))
             return None
+        
+        
+    de
     
