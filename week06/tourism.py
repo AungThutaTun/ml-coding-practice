@@ -48,6 +48,7 @@ def getTourismStatesService(nat_cd, ed_cd, nStartYear, nEndYear):
                 natName = natName.replace('', '')
                 num = jsonData['response']['body']['items']['item']['num']
                 ed = jsonData['response']['body']['items']['item']['ed']
+                print('[%s] %s %s의 입국자 수는 %s명입니다.' % (yyyymm, natName, ed, num))
                 print('----------------------------------------')
                 jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
                 
