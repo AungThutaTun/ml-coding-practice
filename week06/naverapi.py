@@ -68,5 +68,13 @@ def getNaverSearch(node, srcText, start, display) :
             return None
         
         
-    de
+    def getPostData(post, jsonResult, cnt): #[CODE 3]
+        title = post['title']
+        description = post['description']
+        org_link = post['originallink']
+        link = post['link']
+        pDate = post['pubDate']
+        
+        jsonResult.append({'cnt': cnt, 'title': title, 'description': description,
+                           'org_link': org_link, 'link': link, 'pDate': pDate})
     
