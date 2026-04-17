@@ -74,7 +74,8 @@ def getNaverSearch(node, srcText, start, display) :
         org_link = post['originallink']
         link = post['link']
         #%a:짧은 형식의 요일 이름 (에, 'Mon', 'Tue', 'Wed', ...)
-        #%d        pDate = post['pubDate']
+        #%d:일 (예, 01,02,03,...)
+        #%b
         
         jsonResult.append({'cnt': cnt, 'title': title, 'description': description,
                            'org_link': org_link, 'link': link, 'pDate': pDate})
