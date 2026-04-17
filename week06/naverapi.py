@@ -51,7 +51,7 @@ def getNaverSearch(node, srcText, start, display) :
         return json.loads(responseDecode)
     
     
-    def getRequestUrl(url):
+def getRequestUrl(url):
         req = urllib.request.Request(url)
         
         req.add_header("X-Naver-Client-Id", client_id)
@@ -68,24 +68,24 @@ def getNaverSearch(node, srcText, start, display) :
             return None
         
         
-    def getPostData(post, jsonResult, cnt): #[CODE 3]
-        title = post['title']
-        description = post['description']
-        org_link = post['originallink']
-        link = post['link']
+def getPostData(post, jsonResult, cnt): #[CODE 3]
+    title = post['title']
+    description = post['description']
+    org_link = post['originallink']
+    link = post['link']
         
         #%a:짧은 형식의 요일 이름 (에, 'Mon', 'Tue', 'Wed', ...)
         #%d:일 (예, 01,02,03,...)
         #%b:짧은 형식의 월 이름 (예, 'Jan', 'Feb', 'Mar', ...)
-        pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S +0900')
-        pDate = pDate.strftime('%Y-%m-%d %H:%M:%S')
+    pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S +0900')
+    pDate = pDate.strftime('%Y-%m-%d %H:%M:%S')
         
-        jsonResult.append({'cnt': cnt,
-                           'title': title,
-                           'description': description,
-                           'org_link': org_link, 
-                           'link': link, 
-                           'pDate': pDate
-                           })
-        return
+    jsonResult.append({'cnt': cnt,
+                        'title': title,
+                        'description': description,
+                        'org_link': org_link, 
+                        'link': link, 
+                        'pDate': pDate
+                        })
+    return
     main()
