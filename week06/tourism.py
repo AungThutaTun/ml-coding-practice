@@ -37,4 +37,5 @@ def getTourismStatesService(nat_cd, ed_cd, nStartYear, nEndYear):
             jsonData = getTourismStatesItem(yyyymm, nat_cd, ed_cd) #[CODE 2]
             if (jsonData['response']['header']['resultMsg'] == 'OK'):
                 #데이터가 없는 마지막 항복인 경우 -------------------
-                if jsonData['response']['body']['items'] 
+                if jsonData['response']['body']['items'] == '':
+                    dataEND = "{0}{}"
