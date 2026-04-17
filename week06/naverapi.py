@@ -87,4 +87,5 @@ def getNaverSearch(node, srcText, start, display) :
                            'link': link, 
                            'pDate': pDate
                            })
-    
+        return
+    main
