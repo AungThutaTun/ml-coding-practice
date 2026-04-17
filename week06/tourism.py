@@ -53,4 +53,10 @@ def getTourismStatesService(nat_cd, ed_cd, nStartYear, nEndYear):
                 jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
                 result.append([natName, nat_cd, yyyymm, num])
             
-                
+    return (jsonResult, result, natName, ed)
+
+"""### [CODE 2 ]"""
+
+def getTourismStatesItem(yyyymm, nat_cd, ed_cd):
+    servide_url = "http://openapi.tour.go.kr/openapi/service/EdrcntTourismStatsService/getEdrcntTourismStatsList"
+    parameters = ""
