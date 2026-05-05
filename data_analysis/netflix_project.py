@@ -40,5 +40,6 @@ netflix['cast'] = netflix['cast'].replace(np.nan, 'No Data')
 netflix.dropna(axis = 0 , inplace=True)
 
 #.info() : 열에 대한 요약 정보 확인
-#8807 rows(원ㅂㅗㄴ 데이터행 개수) - 17 rows(결축지 행)) = 8790 rows(결축지가 제거된 행 개수
-# )
+#8807 rows(원ㅂㅗㄴ 데이터행 개수) - 17 rows(결축지 행)) = 8790 rows(결축지가 제거된 행 개수)
+netflix.info()
+
