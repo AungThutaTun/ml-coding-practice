@@ -7,7 +7,7 @@ print(mnist.keys()) #data와 target만 사용
 
 X , y = mnist.data, mnist.target
 print(X)
-print(X,shape)
+print(X.shape)
 print(y)
 print(y.shape)
 
@@ -16,4 +16,8 @@ import matplotlib.pyplot as plt
 def plot_digit(image_data) :
     image = image_data.reshape(28, 28)
     plt.imshow(image, cmap= "binary")
+    plt.axis("off")
+    
+some_digit = X[0]
+
 
