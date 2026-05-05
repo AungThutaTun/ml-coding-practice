@@ -75,5 +75,27 @@ netflix['age_group'] = netflix['age_group'].map(age_group_dic)
 netflix.head(2)
 
 #데이터 전처리 완료한 데이터셋 csv 파일로 저장
+#index= false : 데이터프레임의 인뎃스 열을 포함하지 않겠다는 뜻
 netflix.to_csv('netflix_preprocessed.csv', index = False)
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 데이터 전처리가 완료된 데이터섹 블려오기
+netflix = pd.read_csv('netflix_preprocessed.csv')
+
+# netflix brand  상징 색깔 시각화
+sns.palplot(['#221f1f','#b20710', '#e50914', '#f5f5f1'])
+
+#제목 정하기
+plt.title('Netflix brand palette', loc='left', fontfamily='serif', fontsize=15, y =1.2)
+plt.show()
+
+netflix['title'].str.contains('squid game', na =False, case=False)
+
+#오징어 개임을 검색한 조건을 넷플릭스 데이터에 넣어서 True인 값만 출력
+netflix[netflix['title'].str.contains('Squid game', na =False, case=False)]
+
+type_counts = 
