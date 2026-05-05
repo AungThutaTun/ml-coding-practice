@@ -35,3 +35,6 @@ netflix['director'] = netflix['director'].replace(np.nan, 'No Data')
 netflix['cast'] = netflix['cast'].replace(np.nan, 'No Data')
 
 #.dropna(axis = 0) : 결축치가 있는 행 제거
+#원본 개책를 수정하려면 inplace = True 옵션 추가
+#결축지 비율 : date_add(0.11%), rating(0.05%), duration(0.03%)
+netflix.dropna(axis = 0 , inplace=True)
