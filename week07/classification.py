@@ -19,5 +19,7 @@ def plot_digit(image_data) :
     plt.axis("off")
     
 some_digit = X[0]
+plot_digit(some_digit)
+
 
 
