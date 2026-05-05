@@ -44,4 +44,6 @@ netflix.dropna(axis = 0 , inplace=True)
 netflix.info()
 
 #데이터프레임의 각 멀럼별 결축지 개수 반환
-#isna() == isnull() : 결축 값을  True로 반환하고 
+#isna() == isnull() : 결축 값을  True로 반환하고 그외에는 False로 반환하는 함
+netflix.isna().sum()
+
