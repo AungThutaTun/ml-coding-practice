@@ -88,9 +88,7 @@ from sklearn.metrics import roc_auc_score
 
 y_scores = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3, method="decision_function")
 
-roc_auc_score(y_train_5, y_scores
-              
-              )
+roc_auc_score(y_train_5, y_scores)
 
 
 
