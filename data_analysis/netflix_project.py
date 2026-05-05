@@ -98,4 +98,10 @@ netflix['title'].str.contains('squid game', na =False, case=False)
 #오징어 개임을 검색한 조건을 넷플릭스 데이터에 넣어서 True인 값만 출력
 netflix[netflix['title'].str.contains('Squid game', na =False, case=False)]
 
-type_counts = 
+type_counts = netflix['type'].value_counts()
+print(type_counts)
+
+#5x5 크기의 플룻 만들기
+plt.figure(figsize=(5, 5))
+
+plt.pie(type_counts, labels = type_counts.index, autopct='%0.1f%%')
