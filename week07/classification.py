@@ -72,3 +72,6 @@ print(cm)
 y_train_perfect_predictions = y_train_5 #완벽한 분류기일 경우
 
 
+
+
+
