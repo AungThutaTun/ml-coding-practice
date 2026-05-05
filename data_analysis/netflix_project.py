@@ -104,4 +104,8 @@ print(type_counts)
 #5x5 크기의 플룻 만들기
 plt.figure(figsize=(5, 5))
 
-plt.pie(type_counts, labels = type_counts.index, autopct='%0.1f%%')
+plt.pie(type_counts, labels = type_counts.index, autopct='%0.1f%%', startangle=100)
+explode= [0.05, 0.05], shadow = True ,colors = ['#b20710', '#221f1f']
+
+plt.suptitle()  
+
