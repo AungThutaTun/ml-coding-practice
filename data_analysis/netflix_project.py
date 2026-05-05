@@ -129,4 +129,5 @@ netflix['listed_in'].str.split(', ', expand=True).stack()
 # 에시) 인ㄷㅅ스 1의 listed_in 열 값 : International TV Shows, TV Dramas, TV Mysteries
 genres = netflix['listed_in'].str.split(', ', expand=True).stack().value_counts()
 genres
+
 plt.figure(figsize=(12,6))
