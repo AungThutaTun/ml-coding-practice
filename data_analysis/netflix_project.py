@@ -116,3 +116,9 @@ netflix.head(3)
 #netflix dataset의 정르별 등장 횟수 계산
 genres = netflix['listed_in'].str.split(', ',expand=True).stack().value_counts()
 genres
+
+# [1단게] listed_in 열에 있는 장르를 쉼표로 분할하기
+#  예시) 인뎃스 1 의 listed_in 열 값 : International TV Shows, TV Dramas, TV Mysteries
+netflix['listed_in'].str.split(', ',expand=True)
+
+#[2단계]
