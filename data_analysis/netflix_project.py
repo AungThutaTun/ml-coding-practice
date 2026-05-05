@@ -107,5 +107,7 @@ plt.figure(figsize=(5, 5))
 plt.pie(type_counts, labels = type_counts.index, autopct='%0.1f%%', startangle=100)
 explode= [0.05, 0.05], shadow = True ,colors = ['#b20710', '#221f1f']
 
-plt.suptitle('Movie & TV Show distribution', fontfamily = 'serif',font)
+plt.suptitle('Movie & TV Show distribution', fontfamily = 'serif',fontsize =15, fontweight='bold')
+plt.title('We see more movies tha TV shows onn Netflix.', fontfamily = 'serif', fontsize=12)
+plt.show()
 
