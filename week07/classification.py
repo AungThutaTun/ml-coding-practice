@@ -98,6 +98,11 @@ forest_clf = RandomForestClassifier(random_state=42)
 y_probas_forest = cross_val_predict(forest_clf, X_train, y_train_5, cv=3, method="predict_proba")
 
 
-y_score_forest = y_probas_forest []
+y_score_forest = y_probas_forest [:,1]
+y_train_pred_forest = y_probas_forest[:, 1] >= 0.5 #양성 확률 >= 50%
 
+print(f1_score(y_train_5, y_train_pred_forest))
+print(roc_auc_score(y_train_5, y_score_forest))
+print(precision_score(y_train_5, y_train_pred_forest))
+print(recall_score(y_train_5, y_train_pred_forest))
 
