@@ -43,3 +43,5 @@ netflix.dropna(axis = 0 , inplace=True)
 #8807 rows(원ㅂㅗㄴ 데이터행 개수) - 17 rows(결축지 행)) = 8790 rows(결축지가 제거된 행 개수)
 netflix.info()
 
+#데이터프레임의 각 멀럼별 결축지 개수 반환
+#isna() == isnull() : 결축 값을  True로 반환하고 
