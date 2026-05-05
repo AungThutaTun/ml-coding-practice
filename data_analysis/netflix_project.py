@@ -68,3 +68,7 @@ age_group_dic = {
     'R' : 'Adults',
     'TV-MA' : 'Adults'
     }
+
+#map 함ㅅ를 이용하여 rating 컬럼의 값을 딕셔너리를 기반으로 변환하여 age_group 컬럼에 저장
+netflix['age_group'] = netflix['age_group'].map(age_group_dic)
+netflix.head(2)
