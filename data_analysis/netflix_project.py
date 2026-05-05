@@ -131,3 +131,4 @@ genres = netflix['listed_in'].str.split(', ', expand=True).stack().value_counts(
 genres
 
 plt.figure(figsize=(12,6))
+
