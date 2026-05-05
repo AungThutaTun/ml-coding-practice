@@ -125,3 +125,4 @@ netflix['listed_in'].str.split(', ',expand=True)
 #에시) 인뎃스 1의 listed_in 열값 : International TV Shows, TV Dramas, TV Mysteries
 netflix['listed_in'].str.split(', ', expand=True).stack()
 
+# [3단계] .value_counts()를 붙여 장르의 등장
