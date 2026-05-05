@@ -47,7 +47,10 @@ sgd_clf.fit(X_train, y_train_5)
 sgd_clf.predicct([some_digit])
 
 #성능 축장 - 교차 검증을 사용한 정확도 축정
-from sklearn.mode_selection import cross_val_score
+from sklearn.model_selection import cross_val_score
+
+cross_val_score(sgd_clf, X_train, y_train_5, cv =3 , scoring="accuracy")
+
 
 
 
