@@ -125,4 +125,8 @@ netflix['listed_in'].str.split(', ',expand=True)
 #에시) 인뎃스 1의 listed_in 열값 : International TV Shows, TV Dramas, TV Mysteries
 netflix['listed_in'].str.split(', ', expand=True).stack()
 
-# [3단계] .value_counts()를 붙여 장르의 등장
+# [3단계] .value_counts()를 붙여 장르의 등장 횟수 계산
+# 에시) 인ㄷㅅ스 1의 listed_in 열 값 : International TV Shows, TV Dramas, TV Mysteries
+genres = netflix['listed_in'].str.split(', ', expand=True).stack().value_counts()
+genres
+plt.figure(figsize=(12,6))
