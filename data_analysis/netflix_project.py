@@ -19,3 +19,8 @@ netflix.head(3)
 # .info() : 열에 대한 요약 정보 확인
 netflix.info() 
 
+# 넷플릭스 결축치 비율 확인하기
+for i in netflix.columns :
+    missingValueRate = netflix[i].isna().sum() / len(netflix) * 100
+    if missingValueRate > 0 :
+        print("{} null rate: {}%".format(i,round(missingValueRate, 2)))
