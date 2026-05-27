@@ -38,6 +38,42 @@ tree_clf2 = DecisionTreeClassifier(min_samples_leaf=5, random_state=42)
 tree_clf1.fit(X_moons, y_moons)
 tree_clf2.fit(X_moons, y_moons)
 
-X_moons_test, y_moons_test = make_moons(n_samples=1000 , noise=0.2, random_state=43)
+X_moons_test, y_moons_test = make_moons(n_samples=1000 , noise=0.2,
+                                        random_state=43)
 
+print(tree_clf1.score(X_moons_test, y_moons_test))
+print(tree_clf2.score(X_moons_test, y_moons_test))
 
+#회귀
+
+from sklearn.tree import DecisionTreeRegressor
+import numpy as np
+
+np.random.seed(42)
+X_quad =np.random.rand(200, 1) - 0.5 #간단한 랜덤한 입력 특성
+y_quad = X_quad ** 2 + 0.025 * np.random.randn(200, 1)
+
+tree_reg =  DecisionTreeRegressor(max_depth=2, random_state=42)
+tree_reg.fit(X_quad, y_quad)
+
+export_graphviz(
+    tree_reg,
+    out_file ="regressio_tree.dot",
+    feature_names=["x1"],
+    rounded=True,
+    filled=True
+)
+Source.from_file("regression_tree.dot")
+
+""" # 축 방향에 대한 민감성 """
+
+from sklearn.decomposition import PCA
+from sklearn.pipeline import make_pipeline
+from sklear.preprocessing import StandardScaler
+
+pca_pipeline = make_pipeline(StandardScaler(), PCA())
+X_iris_rotated = pca_pipeline.fit_transfrom(X_iris)
+tree_clf_pca = DecisionTreeClassifier(max_depth=2, random_state=42)
+tree_clf_pca.fit(X_iris_rotated, y_iris)
+
+#추가 코드  - 이
