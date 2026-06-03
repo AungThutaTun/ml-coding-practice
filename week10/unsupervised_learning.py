@@ -167,3 +167,7 @@ plt.subplot(122)
 plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
 
 plt.show()
+
+from sklearn.neighbors import KNeighborsClassifier
+
+x, y = make_moons(n_samples=1000, noise=0.05, random_state=42)
