@@ -149,3 +149,21 @@ def plot_dbscan(dbscan, X , size, show_xlabels=True, show_ylabels=True):
         plt.tiock_params(labelbottom=False)
     if show_ylabels:
         plt.ylabel("$x_2$", rotation=0)
+    else:
+        plt.tick_params(labelbottom=False)
+    plt.title(f"eps={dbscan.eps:.2f},min_samples={dbscan.min_samples}")
+    plt.grid()
+    plt.gca().set_axisbelow(True)
+    
+dbscan2 = DBSCAN(eps=0.2)
+dbscan2.fit(X)
+
+plt.figure(figsize=(9,3.2))
+
+plt.subplot(121)
+plot_dbscan(dbscan, X, size=100)
+
+plt.subplot(122)
+plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
+
+plt.show()
