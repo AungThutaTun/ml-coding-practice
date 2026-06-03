@@ -56,4 +56,16 @@ plt.figure(figsize=(8, 3.5))
 plt.plot(range(1,10), inertias, "bo-")
 plt.xlabel("$k$")
 plt.ylabel("이너셔")
+plt.annotate("", xy=(5, inertias[4]), xytext=(4.45, 650),arrowprops=dict(facecolor='black', shrink=0.1))
+plt.text(4.5, 650 ,"엘보", horizontalalignment="center")
+plt.axis([1, 8.5, 0, 3500])
+plt.grid()
+plt.show()
 
+from sklearn.metrics import silhouette_score
+
+print(silhouette_score(X, kmeans.labels_))
+
+silhouette_scores = [silhouette_score(X, model.labels_) for model in kmeans_perk[1:]]
+
+plt.figure(figsize=(8, 3))
